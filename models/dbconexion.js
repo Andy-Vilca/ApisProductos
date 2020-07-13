@@ -3,7 +3,7 @@ var conn = mysql.createConnection({
   host:"localhost",
   user:"root",
   password:"",
-  database:"tienda"
+  database:"TodoAPI"
 });
 conn.connect();
 module.exports = conn;

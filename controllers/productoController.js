@@ -75,7 +75,7 @@ let productos = {
     });
   },
   delete( req, res ){
-    val_id = req.paramsid;
+    val_id = req.params.id;
     let sql = "DELETE FROM productos WHERE Id=?";
     db.query(sql,[val_id],function(err, newData){
       if(err){
